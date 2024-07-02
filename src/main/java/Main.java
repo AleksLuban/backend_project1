@@ -23,12 +23,11 @@ public class Main {
         StudentComparator studentComparator2 = UtilsComparator.studentCompMethod(StudentCompare.FullNameComparator);
         UniversityComparator universityComparator = UtilsComparator.universityCompMethod(UniversityCompare.ShortNameComparator);
 
-        Collections.sort(list, studentComparator);
-        list.stream().forEach(System.out::println);
+        list.stream().sorted(studentComparator).forEach(System.out::println);
 
         ArrayList<University> list2 = ReadingClass.readUniversity();
 
         Collections.sort(list2, universityComparator);
-        list2.stream().forEach(System.out::println);
+        list2.stream().sorted(universityComparator).forEach(System.out::println);
     }
 }
