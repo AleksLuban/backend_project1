@@ -17,4 +17,8 @@ public enum StudyProfile {
     StudyProfile(String profileName) {
         this.profileName = profileName;
     }
+
+    public String getProfileName() {
+        return profileName;
+    }
 }

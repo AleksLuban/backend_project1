@@ -1,11 +1,17 @@
 package model;
 
-public class University {
+import com.google.gson.annotations.SerializedName;
 
+public class University {
+    @SerializedName(value = "idUniversity")
     private String id;
+    @SerializedName(value = "name")
     private String fullName;
+    @SerializedName(value = "short")
     private String shortName;
+    @SerializedName(value = "year")
     private double yearOfFoundation;
+    @SerializedName(value = "profile")
     private StudyProfile mainProfile;
 
     public University() {
